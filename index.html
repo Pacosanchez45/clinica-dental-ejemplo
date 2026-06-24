@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clínica dental Sonrisa Clara. Implantes, ortodoncia invisible, estética dental, odontopediatría y urgencias dentales."
+    />
+    <title>Sonrisa Clara | Clínica dental integral</title>
+    <link rel="preload" href="assets/hero-dental.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Sonrisa Clara, ir al inicio" data-scroll-top>
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 28 28" role="img">
+            <path
+              d="M8.2 3.7C5.9 4.7 4.5 7.1 5 9.7c.4 2.2 1.6 4 2 6 .6 2.9.8 7.2 3.2 8.2 1.7.7 2.2-2.2 2.7-4.4.3-1.2.5-2.2 1.1-2.2s.8 1 1.1 2.2c.5 2.2 1 5.1 2.7 4.4 2.4-1 2.6-5.3 3.2-8.2.4-2 1.6-3.8 2-6 .5-2.6-.9-5-3.2-6-1.8-.8-3.4-.2-4.8.5-.7.4-1.3.6-2 .6s-1.3-.2-2-.6c-1.4-.7-3-1.3-4.8-.5Z"
+            />
+          </svg>
+        </span>
+        <span>
+          <strong>Sonrisa Clara</strong>
+          <small>Clínica dental integral</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <em>Menú</em>
+      </button>
+
+      <nav class="main-nav" id="main-nav" data-nav>
+        <a href="#tratamientos">Tratamientos</a>
+        <a href="#equipo" data-open-team>Equipo</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="header-cta" href="#cita">Pedir cita</a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media" aria-hidden="true"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Odontología avanzada en Málaga</p>
+          <h1 id="hero-title">Tu sonrisa sana empieza con una visita cómoda</h1>
+          <p class="hero__lead">
+            Tratamientos dentales sin prisas, tecnología digital y un equipo que explica cada paso
+            con claridad. Reserva tu primera valoración y sal con un plan honesto.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#cita">Reservar valoración</a>
+            <a class="btn btn--ghost" href="#tratamientos">Ver tratamientos</a>
+          </div>
+          <a class="hero__emergency" href="tel:+34952000000">
+            <strong>Urgencias dentales hoy</strong>
+            <span>Llámanos antes de las 18:00 y buscamos hueco.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="booking-card" id="cita" aria-labelledby="booking-title">
+        <div>
+          <h2 id="booking-title">Agenda tu primera visita</h2>
+          <p>Valoración inicial, radiografía digital y presupuesto transparente.</p>
+        </div>
+        <form class="booking-form" data-booking-form>
+          <label>
+            <span>Nombre</span>
+            <input name="name" autocomplete="name" required minlength="2" />
+          </label>
+          <label>
+            <span>Teléfono</span>
+            <input name="phone" autocomplete="tel" inputmode="tel" required />
+          </label>
+          <label>
+            <span>Tratamiento</span>
+            <select name="treatment" required>
+              <option value="">Selecciona</option>
+              <option>Implantes dentales</option>
+              <option>Ortodoncia invisible</option>
+              <option>Estética dental</option>
+              <option>Odontopediatría</option>
+              <option>Urgencia dental</option>
+              <option>Primera revision</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" type="submit">Enviar</button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </section>
+
+      <section class="stats" aria-label="Datos de confianza">
+        <article>
+          <strong>+18</strong>
+          <span>años cuidando sonrisas</span>
+        </article>
+        <article>
+          <strong>4.9/5</strong>
+          <span>valoración media</span>
+        </article>
+        <article>
+          <strong>24h</strong>
+          <span>respuesta en citas</span>
+        </article>
+        <article>
+          <strong>100%</strong>
+          <span>plan explicado</span>
+        </article>
+      </section>
+
+      <section class="section" id="tratamientos" aria-labelledby="services-title">
+        <p class="eyebrow eyebrow--center">Tratamientos</p>
+        <h2 id="services-title">Todo lo que necesitas en una sola clínica</h2>
+        <p class="section__intro">
+          Diseñamos planes personalizados para salud, estética y prevención, con un trato cercano
+          desde la primera llamada.
+        </p>
+        <div class="service-grid">
+          <article class="service-card" data-treatment="Implantes dentales">
+            <span class="service-card__icon" aria-hidden="true"></span>
+            <h3>Implantes dentales</h3>
+            <p>Recupera piezas con planificación 3D y cirugía guiada.</p>
+            <button type="button" data-open-treatment>Solicitar info</button>
+          </article>
+          <article class="service-card" data-treatment="Ortodoncia invisible">
+            <span class="service-card__icon" aria-hidden="true"></span>
+            <h3>Ortodoncia invisible</h3>
+            <p>Alineadores discretos con seguimiento digital.</p>
+            <button type="button" data-open-treatment>Solicitar info</button>
+          </article>
+          <article class="service-card" data-treatment="Estética dental">
+            <span class="service-card__icon" aria-hidden="true"></span>
+            <h3>Estética dental</h3>
+            <p>Blanqueamiento, carillas y armonía de sonrisa.</p>
+            <button type="button" data-open-treatment>Solicitar info</button>
+          </article>
+          <article class="service-card" data-treatment="Odontopediatría">
+            <span class="service-card__icon" aria-hidden="true"></span>
+            <h3>Odontopediatría</h3>
+            <p>Cuidado amable para que venir al dentista sea fácil.</p>
+            <button type="button" data-open-treatment>Solicitar info</button>
+          </article>
+          <article class="service-card" data-treatment="Periodoncia">
+            <span class="service-card__icon" aria-hidden="true"></span>
+            <h3>Periodoncia</h3>
+            <p>Tratamiento de encías, prevención y mantenimiento.</p>
+            <button type="button" data-open-treatment>Solicitar info</button>
+          </article>
+          <article class="service-card" data-treatment="Urgencia dental">
+            <span class="service-card__icon" aria-hidden="true"></span>
+            <h3>Urgencias</h3>
+            <p>Dolor, fracturas o inflamación con atención prioritaria.</p>
+            <button type="button" data-open-treatment>Solicitar info</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="process" id="experiencia" aria-labelledby="process-title">
+        <div>
+          <h2 id="process-title">Una experiencia dental sin incertidumbre</h2>
+          <p>
+            Desde la primera cita tienes diagnóstico claro, opciones de tratamiento y tiempos
+            realistas. Cuidamos tanto la salud como la tranquilidad.
+          </p>
+          <a class="btn btn--primary" href="tel:+34952000000">Hablar con recepción</a>
+        </div>
+        <div class="process__steps">
+          <article>
+            <span>01</span>
+            <strong>Exploración completa</strong>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Diagnóstico digital</strong>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Plan y presupuesto</strong>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Seguimiento continuo</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="opiniones" aria-labelledby="reviews-title">
+        <p class="eyebrow eyebrow--center">Pacientes reales</p>
+        <h2 id="reviews-title">Confianza desde la primera conversación</h2>
+        <div class="review-grid">
+          <article class="review-card">
+            <p>"Me explicaron todas las opciones sin presionarme. Por fin entendí qué necesitaba."</p>
+            <div>
+              <span>L</span>
+              <strong>Laura M.</strong>
+              <small>Ortodoncia invisible</small>
+            </div>
+          </article>
+          <article class="review-card">
+            <p>"Tenía mucho miedo al implante y fue más fácil de lo que imaginaba."</p>
+            <div>
+              <span>C</span>
+              <strong>Carlos R.</strong>
+              <small>Implantes</small>
+            </div>
+          </article>
+          <article class="review-card">
+            <p>"Llevamos a los niños y ahora vienen tranquilos. El trato marca la diferencia."</p>
+            <div>
+              <span>A</span>
+              <strong>Ana y Miguel</strong>
+              <small>Odontopediatría</small>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta" id="contacto" aria-labelledby="contact-title">
+        <div>
+          <h2 id="contact-title">¿Listo para sonreír con calma?</h2>
+          <p>Cuéntanos qué necesitas y te ayudamos a elegir la primera cita adecuada.</p>
+        </div>
+        <div class="final-cta__actions">
+          <a class="btn btn--light" href="#cita">Pedir cita ahora</a>
+          <a class="btn btn--ghost" href="https://wa.me/34952000000" target="_blank" rel="noreferrer">
+            WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-card">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio" aria-label="Sonrisa Clara, ir al inicio" data-scroll-top>
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 28 28" role="img">
+                <path
+                  d="M8.2 3.7C5.9 4.7 4.5 7.1 5 9.7c.4 2.2 1.6 4 2 6 .6 2.9.8 7.2 3.2 8.2 1.7.7 2.2-2.2 2.7-4.4.3-1.2.5-2.2 1.1-2.2s.8 1 1.1 2.2c.5 2.2 1 5.1 2.7 4.4 2.4-1 2.6-5.3 3.2-8.2.4-2 1.6-3.8 2-6 .5-2.6-.9-5-3.2-6-1.8-.8-3.4-.2-4.8.5-.7.4-1.3.6-2 .6s-1.3-.2-2-.6c-1.4-.7-3-1.3-4.8-.5Z"
+                />
+              </svg>
+            </span>
+            <span>
+              <strong>Sonrisa Clara</strong>
+              <small>Clínica dental integral</small>
+            </span>
+          </a>
+          <p>
+            Odontología cercana, tecnología digital y tratamientos explicados con calma desde la
+            primera visita.
+          </p>
+          <a class="btn btn--primary" href="#cita">Pedir cita</a>
+        </div>
+        <div class="footer-links">
+          <h3>Explora</h3>
+          <a href="#tratamientos">Tratamientos</a>
+          <a href="#equipo" data-open-team>Equipo</a>
+          <a href="#opiniones">Opiniones</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-contact">
+          <h3>Contacto</h3>
+          <a href="tel:+34952000000">952 000 000</a>
+          <a href="mailto:hola@sonrisaclara.es">hola@sonrisaclara.es</a>
+          <span>Calle Larios 24, Málaga</span>
+          <span>Lun-Vie · 9:00-20:00</span>
+        </div>
+        <div class="footer-note">
+          <strong>Urgencias dentales</strong>
+          <p>Si tienes dolor, fractura o inflamación, llámanos y buscamos el hueco más cercano.</p>
+          <a href="https://wa.me/34952000000" target="_blank" rel="noreferrer">Escribir por WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sonrisa Clara. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+
+    <a
+      class="floating-whatsapp"
+      href="https://wa.me/34952000000?text=Hola%2C%20quiero%20pedir%20cita%20en%20Sonrisa%20Clara"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Pedir cita por WhatsApp"
+    >
+      WhatsApp
+    </a>
+
+    <dialog class="treatment-dialog" data-dialog>
+      <form method="dialog">
+        <button class="dialog-close" aria-label="Cerrar" value="close">x</button>
+      </form>
+      <h2 data-dialog-title>Tratamiento</h2>
+      <p data-dialog-copy></p>
+      <div class="dialog-actions">
+        <button class="btn btn--primary" type="button" data-dialog-book>Reservar cita</button>
+        <a class="btn btn--outline" href="tel:+34952000000">Llamar ahora</a>
+      </div>
+    </dialog>
+
+    <dialog class="team-dialog" id="equipo" data-team-dialog>
+      <form method="dialog">
+        <button class="dialog-close" aria-label="Cerrar" value="close">x</button>
+      </form>
+      <div class="team-dialog__header">
+        <p class="eyebrow">Nuestro equipo</p>
+        <h2>Especialistas que explican, acompañan y cuidan</h2>
+        <p>
+          En Sonrisa Clara combinamos odontología conservadora, estética, ortodoncia e implantes
+          con una forma de trabajar clara: diagnóstico honesto, planificación digital y trato
+          cercano en cada visita.
+        </p>
+      </div>
+      <div class="team-grid">
+        <article class="team-card">
+          <span class="team-card__avatar">MR</span>
+          <div>
+            <h3>Dra. Marta Ríos</h3>
+            <strong>Dirección médica e implantología</strong>
+            <p>Licenciada en Odontología. Máster en Cirugía Oral, Implantología y Periodoncia.</p>
+          </div>
+        </article>
+        <article class="team-card">
+          <span class="team-card__avatar">AM</span>
+          <div>
+            <h3>Dr. Álvaro Medina</h3>
+            <strong>Ortodoncia invisible y estética dental</strong>
+            <p>Odontólogo especialista en ortodoncia digital. Certificación en alineadores.</p>
+          </div>
+        </article>
+        <article class="team-card">
+          <span class="team-card__avatar">IC</span>
+          <div>
+            <h3>Irene Castillo</h3>
+            <strong>Higienista y prevención</strong>
+            <p>Técnico superior en Higiene Bucodental. Educación periodontal y mantenimiento.</p>
+          </div>
+        </article>
+        <article class="team-card">
+          <span class="team-card__avatar">PL</span>
+          <div>
+            <h3>Paula León</h3>
+            <strong>Atención al paciente</strong>
+            <p>Coordinación de citas, presupuestos y seguimiento para que todo sea sencillo.</p>
+          </div>
+        </article>
+      </div>
+      <div class="team-dialog__footer">
+        <p>Trabajamos con radiografía digital, planificación 3D y protocolos de esterilización.</p>
+        <a class="btn btn--primary" href="#cita" data-team-book>Pedir cita con el equipo</a>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
